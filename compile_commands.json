@@ -1,0 +1,114 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/lexer.o",
+      "src/lexer.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/lexer.c",
+    "output": "/root/code/shell/obj/lexer.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/main.o",
+      "src/main.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/main.c",
+    "output": "/root/code/shell/obj/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/readline.o",
+      "src/readline.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/readline.c",
+    "output": "/root/code/shell/obj/readline.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/sds.o",
+      "src/sds.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/sds.c",
+    "output": "/root/code/shell/obj/sds.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/token.o",
+      "src/token.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/token.c",
+    "output": "/root/code/shell/obj/token.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/util.o",
+      "src/util.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/util.c",
+    "output": "/root/code/shell/obj/util.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Iinclude",
+      "-Wall",
+      "-Werror",
+      "-ggdb",
+      "-c",
+      "-o",
+      "obj/vec.o",
+      "src/vec.c"
+    ],
+    "directory": "/root/code/shell",
+    "file": "/root/code/shell/src/vec.c",
+    "output": "/root/code/shell/obj/vec.o"
+  }
+]
