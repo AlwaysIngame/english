@@ -1,33 +1,32 @@
 #pragma once
 
-#include "util.h"
 #include "sds.h"
+#include "util.h"
 #include <string.h>
 
 enum Type {
-    OUTFILE,
-    INFILE,
-    PIPE,
-    OUTAPPEND,
-    IDENTIFIER,
-    NEWLINE,
-    ENDFILE,
+  WORD,
+  OUTFILE,
+  OUTAPPEND,
+  INFILE,
+  PIPE,
+  NEWLINE,
 };
-
 
 typedef struct Token {
 
-    enum Type type;
-    sds text;
+  enum Type type;
+  sds text;
 
 } Token;
 
-typedef Token* TokenVec;
+#define tokenfree(t)                                                           \
+  do {                                                                         \
+    sdsfree(t->text);                                                          \
+    free(t);                                                                   \
+  } while (0)
 
-#define TOKEN_INIT_NOSTR(t) (Token){.type = t, .text = NULL}
+typedef Token *TokenVec;
 
-#define TOKEN_INIT(t, s) (Token){.type = t, .text = sdsnew(s)}
-
-#define TOKEN_DELETE(t) sdsfree(t->text)
-
-Token get_keyword(sds text);
+Token *get_token();
+void push_token(Token *);
